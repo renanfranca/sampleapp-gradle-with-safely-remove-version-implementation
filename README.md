@@ -18,6 +18,7 @@ npm install
 
 ## Local environment
 
+- [Local server](http://localhost:8081)
 
 <!-- jhipster-needle-localEnvironment -->
 
@@ -32,5 +33,6 @@ npm install
 - [Assertions](documentation/assertions.md)
 - [Hexagonal architecture](documentation/hexagonal-architecture.md)
 - [Logs Spy](documentation/logs-spy.md)
+- [CORS configuration](documentation/cors-configuration.md)
 
 <!-- jhipster-needle-documentation -->
