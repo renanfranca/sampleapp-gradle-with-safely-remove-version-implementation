@@ -132,6 +132,9 @@ dependencies {
   testImplementation(libs.cucumber.java)
   testImplementation(libs.cucumber.spring)
   testImplementation(libs.junit.platform.suite)
+  testImplementation(libs.jjwt.api)
+  testImplementation(libs.jjwt.impl)
+  testImplementation(libs.jjwt.jackson)
 
   // jhipster-needle-gradle-test-dependencies
 }

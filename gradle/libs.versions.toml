@@ -3,6 +3,7 @@ bundles = {}
 [versions]
 	archunit-junit5 = "1.3.0"
 	testcontainers = "1.19.8"
+	json-web-token = "0.12.6"
 	reflections = "0.10.2"
 	sonarqube = "4.4.1.3373"
 	cucumber = "7.18.0"
@@ -90,6 +91,13 @@ bundles = {}
 		[libraries.cucumber-java.version]
 			ref = "cucumber"
 
+	[libraries.jjwt-jackson]
+		name = "jjwt-jackson"
+		group = "io.jsonwebtoken"
+
+		[libraries.jjwt-jackson.version]
+			ref = "json-web-token"
+
 	[libraries.liquibase-core]
 		name = "liquibase-core"
 		group = "org.liquibase"
@@ -104,6 +112,13 @@ bundles = {}
 	[libraries.junit-platform-suite]
 		name = "junit-platform-suite"
 		group = "org.junit.platform"
+
+	[libraries.jjwt-impl]
+		name = "jjwt-impl"
+		group = "io.jsonwebtoken"
+
+		[libraries.jjwt-impl.version]
+			ref = "json-web-token"
 
 	[libraries.spring-security-test]
 		name = "spring-security-test"
@@ -141,6 +156,13 @@ bundles = {}
 	[libraries.hikariCP]
 		name = "HikariCP"
 		group = "com.zaxxer"
+
+	[libraries.jjwt-api]
+		name = "jjwt-api"
+		group = "io.jsonwebtoken"
+
+		[libraries.jjwt-api.version]
+			ref = "json-web-token"
 
 	[libraries.spring-boot-starter-web]
 		name = "spring-boot-starter-web"

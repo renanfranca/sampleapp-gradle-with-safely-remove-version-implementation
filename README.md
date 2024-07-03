@@ -56,5 +56,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [sonar](documentation/sonar.md)
 - [Postgresql](documentation/postgresql.md)
 - [Cucumber](documentation/cucumber.md)
+- [Cucumber authentication](documentation/cucumber-authentication.md)
 
 <!-- jhipster-needle-documentation -->

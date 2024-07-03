@@ -17,6 +17,7 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.test.context.ActiveProfiles;
+import tech.jhipster.sampleapp.shared.authentication.infrastructure.primary.TestSecurityConfiguration;
 import tech.jhipster.sampleapp.SampleappApp;
 import tech.jhipster.sampleapp.cucumber.CucumberConfiguration.CucumberRestTemplateConfiguration;
 import tech.jhipster.sampleapp.cucumber.rest.CucumberRestTemplate;
@@ -24,7 +25,7 @@ import tech.jhipster.sampleapp.cucumber.rest.CucumberRestTestContext;
 
 @ActiveProfiles("test")
 @CucumberContextConfiguration
-@SpringBootTest(classes = { SampleappApp.class, CucumberRestTemplateConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = { SampleappApp.class, TestSecurityConfiguration.class, CucumberAuthenticationConfiguration.class, CucumberRestTemplateConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
 public class CucumberConfiguration {
 
   private final TestRestTemplate rest;
