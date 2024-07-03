@@ -8,6 +8,8 @@ plugins {
   // jhipster-needle-gradle-plugins
 }
 
+val npmVersion by extra("10.8.1")
+val nodeVersion by extra("v20.15.0")
 // jhipster-needle-gradle-properties
 
 java {
