@@ -3,6 +3,7 @@
 plugins {
   java
   jacoco
+  alias(libs.plugins.spring.boot)
   // jhipster-needle-gradle-plugins
 }
 
@@ -50,6 +51,13 @@ tasks.jacocoTestCoverageVerification {
   executionData.setFrom(fileTree(layout.buildDirectory).include("**/jacoco/test.exec", "**/jacoco/integrationTest.exec"))
 }
 
+
+defaultTasks("bootRun")
+
+springBoot {
+  mainClass = "tech.jhipster.sampleapp.SampleappApp"
+}
+
 // jhipster-needle-gradle-plugins-configurations
 
 repositories {
@@ -68,13 +76,14 @@ val profiles = (project.findProperty("profiles") as String? ?: "")
 
 dependencies {
   implementation(libs.commons.lang3)
+  implementation(platform(libs.spring.boot.dependencies))
+  implementation(libs.spring.boot.starter)
+  implementation(libs.spring.boot.configuration.processor)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   // jhipster-needle-gradle-runtime-dependencies
-  testImplementation(libs.junit.engine)
-  testImplementation(libs.junit.params)
-  testImplementation(libs.assertj)
-  testImplementation(libs.mockito)
+  testImplementation(libs.spring.boot.starter.test)
+
   // jhipster-needle-gradle-test-dependencies
 }
 
