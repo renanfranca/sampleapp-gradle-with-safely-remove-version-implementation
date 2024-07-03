@@ -35,5 +35,6 @@ npm install
 - [Logs Spy](documentation/logs-spy.md)
 - [CORS configuration](documentation/cors-configuration.md)
 - [Dev tools](documentation/dev-tools.md)
+- [Vue](documentation/vue.md)
 
 <!-- jhipster-needle-documentation -->
