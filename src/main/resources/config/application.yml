@@ -45,3 +45,10 @@ management:
         - logfile
         - loggers
         - threaddump
+  info:
+    env:
+      enabled: true
+    # Git Information
+    git:
+      enabled: true
+      mode: full

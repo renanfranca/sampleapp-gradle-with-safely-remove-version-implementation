@@ -3,9 +3,16 @@ bundles = {}
 [versions]
 	archunit-junit5 = "1.3.0"
 	reflections = "0.10.2"
+	git-properties = "2.4.2"
 	jacoco = "0.8.11"
 	spring-boot = "3.3.1"
 	commons-lang3 = "3.14.0"
+
+	[plugins.git-properties]
+		id = "com.gorylenko.gradle-git-properties"
+
+		[plugins.git-properties.version]
+			ref = "git-properties"
 
 	[plugins.spring-boot]
 		id = "org.springframework.boot"
