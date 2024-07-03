@@ -9,6 +9,7 @@ bundles = {}
 	jacoco = "0.8.11"
 	spring-boot = "3.3.1"
 	commons-lang3 = "3.14.0"
+	liquibase = "4.28.0"
 
 	[plugins.sonarqube]
 		id = "org.sonarqube"
@@ -27,6 +28,13 @@ bundles = {}
 
 		[plugins.spring-boot.version]
 			ref = "spring-boot"
+
+	[libraries.liquibase-core]
+		name = "liquibase-core"
+		group = "org.liquibase"
+
+		[libraries.liquibase-core.version]
+			ref = "liquibase"
 
 	[libraries.spring-boot-starter-test]
 		name = "spring-boot-starter-test"
