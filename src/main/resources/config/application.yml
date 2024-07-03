@@ -60,6 +60,17 @@ spring:
           in_clause_parameter_padding: true
   liquibase:
     change-log: classpath:config/liquibase/master.xml
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: http://localhost:9080/realms/jhipster
+        registration:
+          oidc:
+            client-id: web_app
+            client-secret: web_app
+            scope: openid,profile,email
 server:
   port: 8081
 management:
@@ -87,3 +98,7 @@ management:
     git:
       enabled: true
       mode: full
+application:
+  security:
+    oauth2:
+      audience: account,api://default

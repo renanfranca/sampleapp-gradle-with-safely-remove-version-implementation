@@ -113,6 +113,9 @@ dependencies {
   implementation(libs.hikariCP)
   implementation(libs.hibernate.core)
   implementation(libs.liquibase.core)
+  implementation(libs.spring.boot.starter.security)
+  implementation(libs.spring.boot.starter.oauth2.client)
+  implementation(libs.spring.boot.starter.oauth2.resource.server)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   runtimeOnly(libs.spring.boot.devtools)
@@ -122,6 +125,7 @@ dependencies {
   testImplementation(libs.reflections)
   testImplementation(libs.archunit.junit5.api)
   testImplementation(libs.testcontainers.postgresql)
+  testImplementation(libs.spring.security.test)
 
   // jhipster-needle-gradle-test-dependencies
 }

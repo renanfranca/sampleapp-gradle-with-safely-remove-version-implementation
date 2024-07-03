@@ -7,6 +7,7 @@ logging:
 spring:
   main:
     banner-mode: 'off'
+    allow-bean-definition-overriding: true
   datasource:
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
     hikari:
@@ -14,5 +15,11 @@ spring:
     password: ''
     url: jdbc:tc:postgresql:16.3:///sampleapp?TC_TMPFS=/testtmpfs:rw
     username: sampleapp
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: http://DO_NOT_CALL:9080/realms/jhipster
 server:
   port: 0

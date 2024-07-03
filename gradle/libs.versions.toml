@@ -29,6 +29,10 @@ bundles = {}
 		[plugins.spring-boot.version]
 			ref = "spring-boot"
 
+	[libraries.spring-boot-starter-oauth2-resource-server]
+		name = "spring-boot-starter-oauth2-resource-server"
+		group = "org.springframework.boot"
+
 	[libraries.liquibase-core]
 		name = "liquibase-core"
 		group = "org.liquibase"
@@ -47,12 +51,20 @@ bundles = {}
 		[libraries.reflections.version]
 			ref = "reflections"
 
+	[libraries.spring-boot-starter-oauth2-client]
+		name = "spring-boot-starter-oauth2-client"
+		group = "org.springframework.boot"
+
 	[libraries.spring-boot-dependencies]
 		name = "spring-boot-dependencies"
 		group = "org.springframework.boot"
 
 		[libraries.spring-boot-dependencies.version]
 			ref = "spring-boot"
+
+	[libraries.spring-security-test]
+		name = "spring-security-test"
+		group = "org.springframework.security"
 
 	[libraries.archunit-junit5-api]
 		name = "archunit-junit5-api"
@@ -106,6 +118,10 @@ bundles = {}
 
 	[libraries.spring-boot-configuration-processor]
 		name = "spring-boot-configuration-processor"
+		group = "org.springframework.boot"
+
+	[libraries.spring-boot-starter-security]
+		name = "spring-boot-starter-security"
 		group = "org.springframework.boot"
 
 	[libraries.commons-lang3]
