@@ -67,6 +67,7 @@ val profiles = (project.findProperty("profiles") as String? ?: "")
 // jhipster-needle-profile-activation
 
 dependencies {
+  implementation(libs.commons.lang3)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   // jhipster-needle-gradle-runtime-dependencies
