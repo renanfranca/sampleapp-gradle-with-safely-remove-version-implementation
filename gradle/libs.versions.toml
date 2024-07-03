@@ -1,6 +1,7 @@
 bundles = {}
 
 [versions]
+	archunit-junit5 = "1.3.0"
 	reflections = "0.10.2"
 	jacoco = "0.8.11"
 	spring-boot = "3.3.1"
@@ -49,6 +50,13 @@ bundles = {}
 	[libraries.spring-boot-configuration-processor]
 		name = "spring-boot-configuration-processor"
 		group = "org.springframework.boot"
+
+	[libraries.archunit-junit5-api]
+		name = "archunit-junit5-api"
+		group = "com.tngtech.archunit"
+
+		[libraries.archunit-junit5-api.version]
+			ref = "archunit-junit5"
 
 	[libraries.commons-lang3]
 		name = "commons-lang3"
