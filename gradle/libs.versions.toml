@@ -35,6 +35,10 @@ bundles = {}
 		[libraries.reflections.version]
 			ref = "reflections"
 
+	[libraries.spring-boot-devtools]
+		name = "spring-boot-devtools"
+		group = "org.springframework.boot"
+
 	[libraries.spring-boot-dependencies]
 		name = "spring-boot-dependencies"
 		group = "org.springframework.boot"

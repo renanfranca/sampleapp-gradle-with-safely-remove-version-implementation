@@ -20,6 +20,11 @@ spring:
       pool:
         size: 2
       thread-name-prefix: sampleapp-scheduling-
+  devtools:
+    livereload:
+      enabled: false
+    restart:
+      enabled: false
 server:
   port: 8081
 management:

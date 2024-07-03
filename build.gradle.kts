@@ -84,6 +84,7 @@ dependencies {
   implementation(libs.spring.boot.starter.actuator)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
+  runtimeOnly(libs.spring.boot.devtools)
   // jhipster-needle-gradle-runtime-dependencies
   testImplementation(libs.spring.boot.starter.test)
   testImplementation(libs.reflections)
