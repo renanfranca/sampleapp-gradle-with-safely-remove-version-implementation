@@ -58,5 +58,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Cucumber](documentation/cucumber.md)
 - [Cucumber authentication](documentation/cucumber-authentication.md)
 - [Kipe expression](documentation/kipe-expression.md)
+- [Kipe authorization](documentation/kipe-authorization.md)
 
 <!-- jhipster-needle-documentation -->
