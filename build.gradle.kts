@@ -81,6 +81,7 @@ dependencies {
   implementation(libs.spring.boot.configuration.processor)
   implementation(libs.spring.boot.starter.validation)
   implementation(libs.spring.boot.starter.web)
+  implementation(libs.spring.boot.starter.actuator)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   // jhipster-needle-gradle-runtime-dependencies
