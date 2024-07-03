@@ -116,6 +116,8 @@ dependencies {
   implementation(libs.spring.boot.starter.security)
   implementation(libs.spring.boot.starter.oauth2.client)
   implementation(libs.spring.boot.starter.oauth2.resource.server)
+  implementation(libs.springdoc.openapi.starter.webmvc.ui)
+  implementation(libs.springdoc.openapi.starter.webmvc.api)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   runtimeOnly(libs.spring.boot.devtools)
