@@ -55,5 +55,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Vue](documentation/vue.md)
 - [sonar](documentation/sonar.md)
 - [Postgresql](documentation/postgresql.md)
+- [Cucumber](documentation/cucumber.md)
 
 <!-- jhipster-needle-documentation -->
