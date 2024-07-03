@@ -64,5 +64,18 @@
       "kafkaClusterId" : "7870e9ec-dd1f-4562-86a2-df2199d5db1a",
       "springConfigurationFormat" : "yaml"
     }
+  }, {
+    "module" : "java-memoizers",
+    "date" : "2024-07-03T14:05:16.736309014Z",
+    "properties" : {
+      "projectName" : "Chips Project",
+      "serverPort" : 8081,
+      "baseName" : "sampleapp",
+      "packageName" : "tech.jhipster.sampleapp",
+      "jwtBase64Secret" : "NmE2NDhmMmQ5OWQzYzk4NmE4NjNlMmQzNmU3ZTU4ZDY2MmUxOWEwZGI4YTk4NDY0MTk4MmQyMWZlNDNlM2FjYg==",
+      "date" : "2021-12-03T10:15:30.00Z",
+      "kafkaClusterId" : "7870e9ec-dd1f-4562-86a2-df2199d5db1a",
+      "springConfigurationFormat" : "yaml"
+    }
   } ]
 }
