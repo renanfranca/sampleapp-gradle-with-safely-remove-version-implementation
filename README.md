@@ -24,6 +24,14 @@ npm install
 
 ## Start up
 
+```bash
+docker compose -f src/main/docker/sonar.yml up -d
+```
+
+```bash
+./gradlew clean build sonar --info
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -36,5 +44,6 @@ npm install
 - [CORS configuration](documentation/cors-configuration.md)
 - [Dev tools](documentation/dev-tools.md)
 - [Vue](documentation/vue.md)
+- [sonar](documentation/sonar.md)
 
 <!-- jhipster-needle-documentation -->

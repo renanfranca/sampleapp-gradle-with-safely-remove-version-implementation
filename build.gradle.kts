@@ -1,3 +1,4 @@
+import java.util.Properties
 // jhipster-needle-gradle-imports
 
 plugins {
@@ -5,6 +6,7 @@ plugins {
   jacoco
   alias(libs.plugins.spring.boot)
   alias(libs.plugins.git.properties)
+  alias(libs.plugins.sonarqube)
   // jhipster-needle-gradle-plugins
 }
 
@@ -65,6 +67,22 @@ springBoot {
 gitProperties {
   failOnNoGitDirectory = false
   keys = listOf("git.branch", "git.commit.id.abbrev", "git.commit.id.describe", "git.build.version")
+}
+
+
+val sonarProperties = Properties()
+File("sonar-project.properties").inputStream().use { inputStream ->
+    sonarProperties.load(inputStream)
+}
+
+sonarqube {
+    properties {
+      sonarProperties
+        .map { it -> it.key as String to (it.value as String).split(",").map { it.trim() } }
+        .forEach { (key, values) -> property(key, values) }
+      property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml")
+      property("sonar.junit.reportPaths", "build/test-results/test,build/test-results/integrationTest")
+    }
 }
 
 // jhipster-needle-gradle-plugins-configurations

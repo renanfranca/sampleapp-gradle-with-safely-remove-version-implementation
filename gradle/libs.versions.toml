@@ -3,10 +3,17 @@ bundles = {}
 [versions]
 	archunit-junit5 = "1.3.0"
 	reflections = "0.10.2"
+	sonarqube = "4.4.1.3373"
 	git-properties = "2.4.2"
 	jacoco = "0.8.11"
 	spring-boot = "3.3.1"
 	commons-lang3 = "3.14.0"
+
+	[plugins.sonarqube]
+		id = "org.sonarqube"
+
+		[plugins.sonarqube.version]
+			ref = "sonarqube"
 
 	[plugins.git-properties]
 		id = "com.gorylenko.gradle-git-properties"
