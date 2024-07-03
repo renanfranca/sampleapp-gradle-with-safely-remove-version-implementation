@@ -125,3 +125,7 @@ Desktop.ini
 .eslintcache
 # Gradle Wrapper
 !gradle/wrapper/gradle-wrapper.jar
+/.gradle/
+/build/
+./buildSrc/.gradle/
+./buildSrc/build/
